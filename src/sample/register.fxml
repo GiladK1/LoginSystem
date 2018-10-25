@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.regController">
+
+  <columnConstraints>
+    <ColumnConstraints maxWidth="191.0" minWidth="71.0" prefWidth="191.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="234.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="528.0" minWidth="10.0" prefWidth="176.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="195.0" minHeight="188.0" prefHeight="188.0" />
+    <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="124.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView depthTest="ENABLE" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pic.jpg" />
+               </image>
+            </ImageView>
+         </children></VBox>
+      <Button fx:id="regButt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="234.0" text="Register" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" onAction="#registerUser" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                  User name" wrappingWidth="181.6708984375" GridPane.rowIndex="1" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                 Password" wrappingWidth="185.6708984375" GridPane.rowIndex="2" />
+      <TextField fx:id="userTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="passTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Text fx:id="feedBack" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.6708984375" GridPane.columnIndex="1" />
+   </children>
+</GridPane>
